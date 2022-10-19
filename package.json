@@ -2,9 +2,10 @@
   "name": "f8-node",
   "version": "1.0.0",
   "description": "Blog",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "nodemon main.js",
+    "start": "nodemon --inspect src/main.js",
+    "watch": "node-sass --watch src/resources/scss/app.scss --output src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,11 @@
   },
   "homepage": "https://github.com/ThienBui1801/nodejs#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.3"
   }
 }
