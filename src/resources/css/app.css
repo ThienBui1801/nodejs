@@ -1,10 +1,9 @@
-@import 'variables';
-
 h1 {
-  color: $yellow-color;
+  color: yellow;
   font-size: 40px;
 }
 
 .space-card {
   margin-top: 16px;
 }
+/*# sourceMappingURL=app.css.map */

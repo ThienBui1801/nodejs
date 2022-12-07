@@ -4,6 +4,7 @@
   "description": "Blog",
   "main": "src/main.js",
   "scripts": {
+    "pret": "prettier --single-quote --trailing-comma all --write '/src/**/*.{js,json,scss}'",
     "start": "nodemon --inspect src/main.js",
     "watch": "node-sass --watch src/resources/scss/app.scss --output src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +25,11 @@
   "homepage": "https://github.com/ThienBui1801/nodejs#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^6.0.6"
+    "express-handlebars": "^6.0.6",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "mongoose": "^6.7.2",
+    "prettier": "^2.7.1"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
